@@ -21,31 +21,18 @@ class Card extends Component {
   }
 
   render() {
-    if (this.state.isBooked) {
-      return (
-        <div className='card' id={this.state.id}>
+    return(
+      <div className='card' id={this.state.id}>
         <img src={this.state.image} alt={this.state.name} />
         <h3>{this.state.name}</h3>
         <p>{this.state.date}</p>
         <p>{this.state.pay}</p>
         <p>{this.state.fluff}</p>
-        <p>Job booked</p>
+        {this.state.isBooked && <p>Job booked</p>}
+        {!this.state.isBooked && <button onClick={() => this.bookJob()}>Book Job 🚀</button>}
         <button onClick={() => this.state.deleteJob(this.state.id)}>🗑</button>
-        </div>
-      )
-    } else {
-      return (
-        <div className='card' id={this.state.id}>
-        <img src={this.state.image} alt={this.state.name} />
-        <h3>{this.state.name}</h3>
-        <p>{this.state.date}</p>
-        <p>{this.state.pay}</p>
-        <p>{this.state.fluff}</p>
-        <button onClick={() => this.bookJob()}>Book Job 🚀</button>
-        <button onClick={() => this.state.deleteJob(this.state.id)}>🗑</button>
-        </div>
-      )
-    }
+      </div>
+    )
   }
 }
 
