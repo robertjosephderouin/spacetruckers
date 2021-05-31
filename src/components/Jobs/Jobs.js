@@ -1,9 +1,9 @@
 import React from 'react'
 import Card from '../Card/Card'
 
-const Jobs = ({ jobs }) => {
+const Jobs = ({ jobs, deleteJob}) => {
   console.log(jobs)
-  const jobCards = jobs.map((job) => {
+  const jobCards = jobs.map(job => {
     return(
         <Card
           image={job.image}
@@ -13,6 +13,7 @@ const Jobs = ({ jobs }) => {
           fluff={job.fluff}
           id={job.id}
           key={job.id}
+          deleteJob={deleteJob}
         />
       )
     })
