@@ -11,6 +11,13 @@ class App extends Component {
     }
   }
 
+  deleteIdea = (id) => {
+    console.log(id);
+    const filteredJobs = this.state.jobs.filter(job => job.id != id);
+    // lets add a delete to this when we add the backend, but for now! 
+    this.setState({ jobs: filteredJobs });
+  }
+
   render() {
     return (
       <main className="App">
