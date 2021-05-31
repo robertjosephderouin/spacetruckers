@@ -1,7 +1,8 @@
 import React from 'react'
+import Card from '../Card/Card'
 
-const Jobs ({ jobs }) => {
-  const jobCards = jobs.map(job () => {
+const Jobs = ({ jobs }) => {
+  const jobCards = jobs.map((job) => {
     return
       (
         <Card
@@ -13,7 +14,8 @@ const Jobs ({ jobs }) => {
           key={job.id}
         />
       )
-    })
-  })
-  return jobCards
+  });
+  return (<div className='job-container'>{jobCards}</div>)
 }
+
+export default Jobs
