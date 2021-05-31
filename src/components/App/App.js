@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Space Truckers</h1>
-        <Jobs jobs={this.state.jobs} deleteJob={this.deleteJob} />
+        <Jobs jobs={this.state.jobs} deleteJob={this.deleteJob} bookJob={this.bookJob} />
       </main>
     );
   }
