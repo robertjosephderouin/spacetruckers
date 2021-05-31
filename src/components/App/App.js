@@ -1,11 +1,13 @@
 import './App.css';
 import Jobs from '../Jobs/Jobs';
+import React, { Component } from 'react'
+import jobs from '../../jobData'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      jobs: []
+      jobs: jobs
     }
   }
 
@@ -13,7 +15,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Space Truckers</h1>
-        <Jobs />
+        <Jobs jobs={this.state.jobs}/>
       </main>
     );
   }
