@@ -1,5 +1,6 @@
 import './App.css';
 import Jobs from '../Jobs/Jobs';
+import React, { Component } from 'react'
 
 class App extends Component {
   constructor() {
