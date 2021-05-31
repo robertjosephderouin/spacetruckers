@@ -15,7 +15,7 @@ class Card extends Component {
     }
   }
 
-  bookJob = (id) => {
+  bookJob = () => {
     // we'll want to refactor this into a post request when the back end is up
     this.setState({ isBooked: true })
   }
@@ -41,7 +41,7 @@ class Card extends Component {
         <p>{this.state.date}</p>
         <p>{this.state.pay}</p>
         <p>{this.state.fluff}</p>
-        <button onClick={() => this.bookJob(this.state.id)}>Book Job 🚀</button>
+        <button onClick={() => this.bookJob()}>Book Job 🚀</button>
         <button onClick={() => this.state.deleteJob(this.state.id)}>🗑</button>
         </div>
       )
