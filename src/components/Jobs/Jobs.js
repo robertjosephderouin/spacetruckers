@@ -2,9 +2,9 @@ import React from 'react'
 import Card from '../Card/Card'
 
 const Jobs = ({ jobs }) => {
+  console.log(jobs)
   const jobCards = jobs.map((job) => {
-    return
-      (
+    return(
         <Card
           image={job.image}
           name={job.name}
@@ -15,7 +15,7 @@ const Jobs = ({ jobs }) => {
           key={job.id}
         />
       )
-  });
+    })
   return (<div className='job-container'>{jobCards}</div>)
 }
 
