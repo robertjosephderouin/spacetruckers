@@ -8,6 +8,7 @@ const Card = ({ image, name, date, pay, fluff }) => {
       <p>{date}</p>
       <p>{pay}</p>
       <p>{fluff}</p>
+      <button>Book Job 🚀</button>
     </div>
   )
 }
