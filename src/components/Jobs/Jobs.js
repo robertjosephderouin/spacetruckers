@@ -11,6 +11,7 @@ const Jobs = ({ jobs }) => {
           date={job.date}
           pay={job.pay}
           fluff={job.fluff}
+          id={job.id}
           key={job.id}
         />
       )
