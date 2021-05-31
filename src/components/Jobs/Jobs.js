@@ -13,6 +13,7 @@ const Jobs = ({ jobs }) => {
           fluff={job.fluff}
           id={job.id}
           key={job.id}
+          isBooked={job.isBooked}
         />
       )
     })
