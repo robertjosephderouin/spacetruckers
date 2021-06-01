@@ -30,11 +30,20 @@ describe('Jobs View', () => {
 
   describe('Job Booking', () => {
 
-    it('Should change the card value to booked when', () => {
+    it('Should change the job value to booked when the booked button is clicked', () => {
       cy.get('#book2')
         .click()
         .get('.card').get('#2')
         .get('.booked').contains('Job booked')
+    });
+  });
+
+  describe('Delete Booking', () => {
+
+    it('Should delete a job when the delete button is clicked', () => {
+    cy.get('#delete3')
+      .click()
+      .get('.card').should('have.length', 3)
     });
   });
 });
