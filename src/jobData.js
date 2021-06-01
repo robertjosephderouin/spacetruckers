@@ -5,7 +5,7 @@ const jobs = [
     name: 'Mars',
     date: '11:10:2195',
     pay: 50000000,
-    isBooked: true,
+    isBooked: false,
     fluff: 'Mars is a barren planet with little resources after it was used up by hyper capitalists in the early 21st century.',
   },
   {

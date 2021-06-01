@@ -5,6 +5,7 @@ const Jobs = ({ jobs, deleteJob, bookJob}) => {
   const jobCards = jobs.map(job => {
     return(
         <Card
+          key={job.id}
           job={job}
           deleteJob={deleteJob}
           bookJob={bookJob}
