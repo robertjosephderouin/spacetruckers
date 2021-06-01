@@ -25,9 +25,9 @@ class Card extends Component {
       <div className='card' id={this.state.id}>
         <img src={this.state.image} alt={this.state.name} />
         <h3>{this.state.name}</h3>
-        <p>{this.state.date}</p>
-        <p>{this.state.pay}</p>
-        <p>{this.state.fluff}</p>
+        <p className='date'>{this.state.date}</p>
+        <p className='pay'>{this.state.pay}</p>
+        <p className='fluff'>{this.state.fluff}</p>
         {this.state.isBooked && <p>Job booked</p>}
         {!this.state.isBooked && <button onClick={() => this.bookJob()}>Book Job 🚀</button>}
         <button onClick={() => this.state.deleteJob(this.state.id)}>🗑</button>
