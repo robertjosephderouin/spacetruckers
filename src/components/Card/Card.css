@@ -17,6 +17,13 @@ button{
   min-width: 10vw;
 }
 
+.image-container {
+  min-width: 10vw;
+  min-height: 10vw;
+  max-width: 10vw;
+  max-height: 10vw;
+}
+
 .card:hover {
   transform: translateY(-.5%);
   box-shadow: 0 4rem 8rem rgba(0, 0, 0, .2);
