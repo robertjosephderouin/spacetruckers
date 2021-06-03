@@ -37,7 +37,7 @@ const jobs = [
   },
   {
     id: 5,
-    image: '/lv426.png',
+    image: '/krypton.jpeg',
     name: 'Krypton',
     date: '06:03:2232',
     pay: 7500000,
@@ -46,8 +46,8 @@ const jobs = [
   },
   {
     id: 6,
-    image: '/lv426.png',
-    name: 'LV-426',
+    image: '/proxima.jpeg',
+    name: 'Alpha Centauri',
     date: '02:22:2379',
     pay: 1000000,
     isBooked: false,
@@ -55,7 +55,7 @@ const jobs = [
   },
   {
     id: 7,
-    image: '/lv426.png',
+    image: '/venus.jpg',
     name: 'Venus',
     date: '02:14:2087',
     pay: 10000,
@@ -64,7 +64,7 @@ const jobs = [
   },
   {
     id: 8,
-    image: '/lv426.png',
+    image: '/moon.jpeg',
     name: 'Moon',
     date: '10:11:2192',
     pay: 5560000,
