@@ -19,10 +19,17 @@ button{
 }
 
 .image-container {
+  margin-right: auto;
+  margin-left:auto;
   min-width: 10vw;
   min-height: 10vw;
   max-width: 10vw;
   max-height: 10vw;
+}
+
+.interactive-container {
+  margin-right: auto;
+  margin-left:auto;
 }
 
 .card:hover {
