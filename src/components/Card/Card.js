@@ -27,7 +27,7 @@ class Card extends Component {
         <div className='image-container'>
           <img className='image'src={this.state.image} alt={this.state.name} />
         </div>
-        <h3>{this.state.name}</h3>
+        <h2>{this.state.name}</h2>
         <p className='date'>{this.state.date}</p>
         <p className='pay'>{this.state.pay}</p>
         <p className='fluff'>{this.state.fluff}</p>
