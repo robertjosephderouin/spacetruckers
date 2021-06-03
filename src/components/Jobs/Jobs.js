@@ -1,5 +1,6 @@
 import React from 'react'
 import Card from '../Card/Card'
+import './Jobs.css';
 
 const Jobs = ({ jobs, deleteJob, bookJob}) => {
   const jobCards = jobs.map(job => {
