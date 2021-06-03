@@ -31,9 +31,11 @@ class Card extends Component {
         <p className='date'>{this.state.date}</p>
         <p className='pay'>{this.state.pay}</p>
         <p className='fluff'>{this.state.fluff}</p>
-        {this.state.isBooked && <p className='booked'>Job booked</p>}
-        {!this.state.isBooked && <button className='book-btn' id={`book${this.state.id}`} onClick={() => this.bookJob()}>Book Job 🚀</button>}
-        <button className='delete-btn' id={`delete${this.state.id}`} onClick={() => this.state.deleteJob(this.state.id)}>🗑</button>
+        <div className='interactive-container'>
+          {this.state.isBooked && <p className='booked'>Job booked</p>}
+          {!this.state.isBooked && <button className='book-btn' id={`book${this.state.id}`} onClick={() => this.bookJob()}>Book Job 🚀</button>}
+          <button className='delete-btn' id={`delete${this.state.id}`} onClick={() => this.state.deleteJob(this.state.id)}>🗑</button>
+        </div>
       </div>
     )
   }
