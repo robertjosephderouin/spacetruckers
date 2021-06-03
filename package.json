@@ -38,6 +38,5 @@
   },
   "devDependencies": {
     "cypress": "^7.4.0"
-  },
-  "proxy": "https://spacetruckersapi.herokuapp.com",
+  }
 }

@@ -15,7 +15,7 @@ class App extends Component {
   componentDidMount = () => {
     getJobs()
       .then(data => {
-        this.setState({ jobs: data.jobs })
+        this.setState({ jobs: data })
       })
       .catch(() => {
         this.setState({ error: 'something went wrong' })
