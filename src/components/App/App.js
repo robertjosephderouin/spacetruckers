@@ -1,14 +1,25 @@
 import './App.css';
 import Jobs from '../Jobs/Jobs';
 import React, { Component } from 'react'
-import jobs from '../../jobData'
+import { getJobs } from '../../api-calls'
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      jobs: jobs
+      jobs: [],
+      error: ''
     }
+  }
+
+  componentDidMount = () => {
+    getJobs()
+      .then(data => {
+        this.setState({ jobs: data.jobs })
+      })
+      .catch(() => {
+        this.setState({ error: 'something went wrong' })
+      })
   }
 
   deleteJob = (id) => {
