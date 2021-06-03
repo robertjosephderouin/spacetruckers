@@ -1,7 +1,7 @@
 const jobs = [
   {
     id: 1,
-    image: '../../../public/mars.jpeg',
+    image: '/mars.jpeg',
     name: 'Mars',
     date: '11:10:2195',
     pay: 50000000,
@@ -10,7 +10,7 @@ const jobs = [
   },
   {
     id: 2,
-    image: '../public/jupiter.jpeg',
+    image: '/jupiter.jpeg',
     name: 'Jupiter',
     date: '6:05:2198',
     pay: 10000000,
@@ -19,7 +19,7 @@ const jobs = [
   },
   {
     id: 3,
-    image: 'path.dummy',
+    image: '/pluto.jpeg',
     name: 'Pluto',
     date: '01:21:2234',
     pay: 100000000,
@@ -28,7 +28,7 @@ const jobs = [
   },
   {
     id: 4,
-    image: 'path.dummy',
+    image: '/lv426.png',
     name: 'LV-426',
     date: '04:22:2179',
     pay: 5000000,

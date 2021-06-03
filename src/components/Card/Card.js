@@ -24,7 +24,7 @@ class Card extends Component {
   render() {
     return(
       <div className='card' id={this.state.id}>
-        <img src={this.state.image} alt={this.state.name} />
+        <img className='image'src={this.state.image} alt={this.state.name} />
         <h3>{this.state.name}</h3>
         <p className='date'>{this.state.date}</p>
         <p className='pay'>{this.state.pay}</p>
