@@ -4,3 +4,33 @@
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 20px;
 }
+
+@media screen and (max-width: 1024px) {
+  .job-container{
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .job-container{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .job-container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .job-container{
+
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .job-container{
+
+  }
+}
