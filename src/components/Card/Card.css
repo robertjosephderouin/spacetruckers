@@ -1,12 +1,20 @@
 .card {
+  display:flex;
+  flex-flow: column;
+  justify-content: space-evenly;
   box-sizing: border-box;
   border: 3px solid #cacde8;
   padding: 10px;
-  max-width: 20vw;
+  max-width: 30vw;
+}
+
+button{
+  margin-top: auto;
 }
 
 .image {
   max-width: 10vw;
+  min-width: 10vw;
 }
 
 .card:hover {
@@ -28,7 +36,7 @@
 @media screen and (max-width: 425px) {
   .card {
     min-width: 90vw;
-    max-height: 50vh;
+    max-height: 60vh;
   }
 }
 
