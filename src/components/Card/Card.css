@@ -11,6 +11,11 @@
   max-width: 30vw;
 }
 
+.booked {
+  align-self: center;
+  color:#00bebe;
+}
+
 .button{
   position: relative;
   width: 240px;
