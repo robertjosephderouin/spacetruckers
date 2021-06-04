@@ -1,8 +1,21 @@
 body{
-  color: #e4e5f1;
+  font-family: 'Orbitron', sans-serif;
+  color: #39FF14;
+  filter: drop-shadow(5px 5px 1px #2f524e55);
   background-color: #25273c;
+  background: linear-gradient(135deg, rgba(125,126,125,1) 6%,rgba(14,14,14,1) 36%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+.App {
+  margin: 0 auto;
+  max-width: 1920px;
 }
 
 h1 {
   padding-left: 1.5vw;
+}
+
+.subtitle {
+  margin-left: 40px;
+  font-size: small;
 }

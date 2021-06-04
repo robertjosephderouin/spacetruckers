@@ -1,33 +1,109 @@
 .card {
   display:flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: space-between;
   background-color: black;
   box-sizing: border-box;
-  border: 3px solid #cacde8;
+  border: 3px solid #2f524e;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
   padding: 10px;
-  max-width: 30vw;
+  max-width: 400px;
 }
 
-button{
-  margin-top: auto;
+.booked {
+  align-self: center;
+  color:#00bebe;
+}
+
+.button{
+  position: relative;
+  width: 240px;
+  background: rgba(0, 190, 190, 0.2);
+  border: 1px solid #00bebe;
+  cursor: pointer;
+  color: #00bebe;
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: .3s;
+  text-transform: uppercase;
+  font-size: 24px;
+  overflow: hidden;
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.button:before, .button:after{
+  content: "";
+  position: absolute;
+  height: 25px;
+  width: 20px;
+  background: #00dcdc;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: -1;
+}
+.button:before{
+  left: -20px;
+}
+.button:after{
+  right: -20px;
+}
+.button:hover{
+    box-shadow: 0 0 25px #00dcdc, 0 1px 5px #212121;
+    border-color: #00dcdc;
+    background:  rgba(0, 190, 190, 0.2);
+    color: #00bebe;
+}
+.button:hover:before{
+  animation: leftbox 1s forwards;
+}
+.button:hover:after{
+  animation: rightbox 1s forwards;
+}
+@keyframes leftbox {
+  0%{
+    left: -22px;
+  }
+  50%{
+    height: 30px;
+    width: 30px;
+  }
+  100%{
+    height: 200%;
+    width: 150%;
+  }
+}
+@keyframes rightbox {
+  0%{
+    right: -22px;
+  }
+  50%{
+    height: 30px;
+    width: 30px;
+  }
+  100%{
+    height: 200%;
+    width: 150%;
+  }
 }
 
 .image {
-  max-width: 10vw;
-  min-width: 10vw;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .image-container {
   margin-right: auto;
   margin-left:auto;
-  min-width: 10vw;
-  min-height: 10vw;
-  max-width: 10vw;
-  max-height: 10vw;
+  height: 200px;
 }
 
 .interactive-container {
+  display:flex;
+  flex-flow: column;
+  align-content: center;
+  margin-top: auto;
   margin-right: auto;
   margin-left:auto;
 }
@@ -38,27 +114,30 @@ button{
 }
 
 @media screen and (max-width: 1024px) {
-  .card{
-  }
+
 }
 
 @media screen and (max-width: 768px) {
   .card{
-    min-width: 30vw;
+    min-width: 30%;
+  }
+  .button{
+    max-width: 200px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .card {
     min-width: 90vw;
-    max-height: 60vh;
   }
 }
 
 @media screen and (max-width: 425px) {
   .card {
     width: 42vw;
-    height: 89vh;
+  }
+  .button {
+    min-width: 50vw;
   }
 }
 

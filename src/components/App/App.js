@@ -44,6 +44,8 @@ class App extends Component {
       <main className="App">
         <h1>Space Truckers</h1>
         <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookThisJob={this.bookThisJob} />
+        <h2 className='subtitle'>"Where were going, there are no laws."</h2>
+        <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookJob={this.bookJob} />
       </main>
     );
   }

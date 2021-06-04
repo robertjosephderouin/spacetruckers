@@ -15,6 +15,9 @@ const Card = ({ job, removeJob, bookThisJob }) => {
           {job.isBooked && <p className='booked'>Job booked</p>}
           {!job.isBooked && <button className='book-btn' id={`book${job.id}`} onClick={() => bookThisJob(job.id)}>Book Job 🚀</button>}
           <button className='delete-btn' id={`delete${job.id}`} onClick={() => job.removeJob(job.id)}>🗑</button>
+          {this.state.isBooked && <p className='booked'>Booked</p>}
+          {!this.state.isBooked && <button className='book-btn button' id={`book${this.state.id}`} onClick={() => this.bookThisJob()}>Book</button>}
+          <button className='delete-btn button' id={`delete${this.state.id}`} onClick={() => this.state.removeJob(this.state.id)}>🗑</button>
         </div>
       </div>
     )

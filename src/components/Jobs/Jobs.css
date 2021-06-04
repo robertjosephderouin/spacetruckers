@@ -7,13 +7,12 @@
 
 @media screen and (max-width: 1024px) {
   .job-container{
-
+    grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media screen and (max-width: 768px) {
   .job-container{
-    grid-template-columns: repeat(3, 1fr);
   }
 }
 
