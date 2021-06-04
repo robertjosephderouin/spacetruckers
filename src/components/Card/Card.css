@@ -1,14 +1,15 @@
 .card {
   display:flex;
   flex-flow: column;
-  justify-content: space-evenly;
+  justify-content: center;
+  align-content: space-between;
   background-color: black;
   box-sizing: border-box;
   border: 3px solid #2f524e;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   padding: 10px;
-  max-width: 30vw;
+  max-width: 400px;
 }
 
 .booked {
@@ -89,23 +90,21 @@
 }
 
 .image {
-  max-width: 10vw;
-  min-width: 10vw;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .image-container {
   margin-right: auto;
   margin-left:auto;
-  min-width: 10vw;
-  min-height: 10vw;
-  max-width: 10vw;
-  max-height: 10vw;
+  height: 200px;
 }
 
 .interactive-container {
   display:flex;
   flex-flow: column;
   align-content: center;
+  margin-top: auto;
   margin-right: auto;
   margin-left:auto;
 }
@@ -116,30 +115,27 @@
 }
 
 @media screen and (max-width: 1024px) {
-  .card{
-  }
+
 }
 
 @media screen and (max-width: 768px) {
   .card{
-    min-width: 30vw;
+    min-width: 30%;
   }
   .button{
-    max-width: 20vw;
+    max-width: 200px;
   }
 }
 
 @media screen and (max-width: 425px) {
   .card {
     min-width: 90vw;
-    max-height: 60vh;
   }
 }
 
 @media screen and (max-width: 425px) {
   .card {
     width: 42vw;
-    height: 89vh;
   }
   .button {
     min-width: 50vw;
