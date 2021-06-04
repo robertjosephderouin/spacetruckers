@@ -24,10 +24,18 @@ class App extends Component {
 
   bookThisJob = (id) => {
     bookJob(id)
+      .then(() => {
+        getJobs()
+          .then(data => {
+            this.setState({ jobs: data })
+          })
+          .catch(() => {
+            this.setState({ error: 'something went wrong' })
+          })
+      })
       .catch(() => {
         this.setState({ error: 'something went wrong' })
       })
-    this.setState({ isBooked: true })
   }
 
   removeJob = (id) => {
