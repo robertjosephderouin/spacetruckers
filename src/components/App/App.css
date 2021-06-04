@@ -1,8 +1,19 @@
 body{
-  color: #e4e5f1;
+  font-family: 'Orbitron', sans-serif;
+  color: #39FF14;
   background-color: #25273c;
+  background: rgb(125,126,125); /* Old browsers */
+  background: -moz-linear-gradient(-45deg, rgba(125,126,125,1) 6%, rgba(14,14,14,1) 36%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg, rgba(125,126,125,1) 6%,rgba(14,14,14,1) 36%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg, rgba(125,126,125,1) 6%,rgba(14,14,14,1) 36%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 h1 {
   padding-left: 1.5vw;
+}
+
+.subtitle {
+  margin-left: 40px;
+  font-size: small;
 }

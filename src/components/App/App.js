@@ -35,6 +35,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Space Truckers</h1>
+        <h2 className='subtitle'>"Where were going, there are no laws."</h2>
         <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookJob={this.bookJob} />
       </main>
     );
