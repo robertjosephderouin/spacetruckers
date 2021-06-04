@@ -2,13 +2,13 @@ import React from 'react'
 import Card from '../Card/Card'
 import './Jobs.css';
 
-const Jobs = ({ jobs, deleteJob, bookJob}) => {
+const Jobs = ({ jobs, removeJob, bookJob}) => {
   const jobCards = jobs.map(job => {
     return(
         <Card
           key={job.id}
           job={job}
-          deleteJob={deleteJob}
+          removeJob={removeJob}
           bookJob={bookJob}
         />
       )

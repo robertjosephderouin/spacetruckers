@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import './Card.css';
+import { bookJob } from '../../api-calls'
 
 class Card extends Component {
   constructor(props) {
@@ -12,12 +13,16 @@ class Card extends Component {
       fluff: props.job.fluff,
       id: props.job.id,
       isBooked: props.job.isBooked,
-      deleteJob: props.deleteJob
+      removeJob: props.removeJob,
+      error: ''
     }
   }
 
-  bookJob = () => {
-    // we'll want to refactor this into a post request when the back end is up
+  bookThisJob = () => {
+    bookJob(this.state.id)
+      .catch(() => {
+        this.setState({ error: 'something went wrong' })
+      })
     this.setState({ isBooked: true })
   }
 
@@ -33,8 +38,8 @@ class Card extends Component {
         <p className='fluff'>{this.state.fluff}</p>
         <div className='interactive-container'>
           {this.state.isBooked && <p className='booked'>Job booked</p>}
-          {!this.state.isBooked && <button className='book-btn' id={`book${this.state.id}`} onClick={() => this.bookJob()}>Book Job 🚀</button>}
-          <button className='delete-btn' id={`delete${this.state.id}`} onClick={() => this.state.deleteJob(this.state.id)}>🗑</button>
+          {!this.state.isBooked && <button className='book-btn' id={`book${this.state.id}`} onClick={() => this.bookThisJob()}>Book Job 🚀</button>}
+          <button className='delete-btn' id={`delete${this.state.id}`} onClick={() => this.state.removeJob(this.state.id)}>🗑</button>
         </div>
       </div>
     )
