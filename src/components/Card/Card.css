@@ -53,7 +53,7 @@
     box-shadow: 0 0 25px #00dcdc, 0 1px 5px #212121;
     border-color: #00dcdc;
     background:  rgba(0, 190, 190, 0.2);
-    color: rgba(33, 33, 33, 0.7);
+    color: #00bebe;
 }
 .button:hover:before{
   animation: leftbox 1s forwards;
