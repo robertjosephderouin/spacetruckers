@@ -3,11 +3,7 @@ body{
   color: #39FF14;
   filter: drop-shadow(5px 5px 1px #2f524e55);
   background-color: #25273c;
-  background: rgb(125,126,125); /* Old browsers */
-  background: -moz-linear-gradient(-45deg, rgba(125,126,125,1) 6%, rgba(14,14,14,1) 36%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(-45deg, rgba(125,126,125,1) 6%,rgba(14,14,14,1) 36%); /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, rgba(125,126,125,1) 6%,rgba(14,14,14,1) 36%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 .App {
