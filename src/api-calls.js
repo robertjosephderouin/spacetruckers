@@ -15,7 +15,10 @@ export const bookJob = (id) => {
     method: 'PATCH',
     body: JSON.stringify({
       isBooked: true
-    })
+    }),
+    headers: {
+      'Content-Type': 'application/json'
+    }
   })
   .then(response => response.json())
 }
