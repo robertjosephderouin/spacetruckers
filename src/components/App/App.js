@@ -1,7 +1,7 @@
 import './App.css';
 import Jobs from '../Jobs/Jobs';
 import React, { Component } from 'react'
-import { getJobs, deleteJob } from '../../api-calls'
+import { getJobs, deleteJob, bookJob } from '../../api-calls'
 
 class App extends Component {
   constructor() {
@@ -22,6 +22,14 @@ class App extends Component {
       })
   }
 
+  bookThisJob = (id) => {
+    bookJob(id)
+      .catch(() => {
+        this.setState({ error: 'something went wrong' })
+      })
+    this.setState({ isBooked: true })
+  }
+
   removeJob = (id) => {
     const filteredJobs = this.state.jobs.filter(job => job.id !== id);
     this.setState({ jobs: filteredJobs });
@@ -35,7 +43,7 @@ class App extends Component {
     return (
       <main className="App">
         <h1>Space Truckers</h1>
-        <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookJob={this.bookJob} />
+        <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookThisJob={this.bookThisJob} />
       </main>
     );
   }

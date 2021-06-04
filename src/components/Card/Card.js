@@ -1,49 +1,23 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Card.css';
-import { bookJob } from '../../api-calls'
 
-class Card extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      image: props.job.image,
-      name: props.job.name,
-      date: props.job.date,
-      pay: props.job.pay,
-      fluff: props.job.fluff,
-      id: props.job.id,
-      isBooked: props.job.isBooked,
-      removeJob: props.removeJob,
-      error: ''
-    }
-  }
-
-  bookThisJob = () => {
-    bookJob(this.state.id)
-      .catch(() => {
-        this.setState({ error: 'something went wrong' })
-      })
-    this.setState({ isBooked: true })
-  }
-
-  render() {
+const Card = ({ job, removeJob, bookThisJob }) => {
     return(
-      <div className='card' id={this.state.id}>
+      <div className='card' id={job.id}>
         <div className='image-container'>
-          <img className='image'src={this.state.image} alt={this.state.name} />
+          <img className='image'src={job.image} alt={job.name} />
         </div>
-        <h2>{this.state.name}</h2>
-        <p className='date'>{this.state.date}</p>
-        <p className='pay'>{this.state.pay}</p>
-        <p className='fluff'>{this.state.fluff}</p>
+        <h2>{job.name}</h2>
+        <p className='date'>{job.date}</p>
+        <p className='pay'>{job.pay}</p>
+        <p className='fluff'>{job.fluff}</p>
         <div className='interactive-container'>
-          {this.state.isBooked && <p className='booked'>Job booked</p>}
-          {!this.state.isBooked && <button className='book-btn' id={`book${this.state.id}`} onClick={() => this.bookThisJob()}>Book Job 🚀</button>}
-          <button className='delete-btn' id={`delete${this.state.id}`} onClick={() => this.state.removeJob(this.state.id)}>🗑</button>
+          {job.isBooked && <p className='booked'>Job booked</p>}
+          {!job.isBooked && <button className='book-btn' id={`book${job.id}`} onClick={() => bookThisJob(job.id)}>Book Job 🚀</button>}
+          <button className='delete-btn' id={`delete${job.id}`} onClick={() => job.removeJob(job.id)}>🗑</button>
         </div>
       </div>
     )
-  }
 }
 
 export default Card
