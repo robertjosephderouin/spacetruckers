@@ -1,14 +1,7 @@
 describe('Jobs View', () => {
 
   beforeEach(() => {
-    cy.fixture('../fixtures/job-data.json')
-    .then((jobs) => {
-      cy.intercept('https://spacetruckersapi.herokuapp.com/api/v1/jobs', {
-        body: jobs,
-        statusCode: 200
-      })
-    });
-    cy.visit('http://localhost:3000/')
+    cy.stubAllJobs()
   });
 
   describe('Page Load View', () => {
@@ -31,26 +24,26 @@ describe('Jobs View', () => {
     });
   });
 
-  // describe('Job Booking', () => {
+//   describe('Job Booking', () => {
+//
+//     it('Should change the job value to booked when the booked button is clicked', () => {
+//       cy.fixture('../fixtures/job-data.json')
+//       .then((jobs) => {
+//         cy.intercept({method: 'PATCH', url: 'https://spacetruckersapi.herokuapp.com/api/v1/jobs/1'}, {isBooked: true})
+//     });
+//       cy.get('#book2')
+//       .click()
+//       .get('.card').get('#2')
+//       .get('.booked').contains('Job booked')
+//   });
+// });
+
+  // describe('Delete Booking', () => {
   //
-  //   it('Should change the job value to booked when the booked button is clicked', () => {
-  //     cy.get('#book2')
-  //       .click()
-  //       cy.request({
-  //         method: 'PATCH',
-  //         url
-  //       })
-  //       .get('.card').get('#2')
-  //       .get('.booked').contains('Job booked')
+  //   it('Should delete a job when the delete button is clicked', () => {
+  //   cy.get('#delete2')
+  //     .click()
+  //     .get('.card').should('have.length', 1)
   //   });
   // });
-
-  describe('Delete Booking', () => {
-
-    it('Should delete a job when the delete button is clicked', () => {
-    cy.get('#delete2')
-      .click()
-      .get('.card').should('have.length', 1)
-    });
-  });
 });
