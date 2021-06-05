@@ -52,13 +52,16 @@ class App extends Component {
     return (
       <main className="App">
         {!this.state.jobs.length && !this.state.error && <h2>Loading jobs...</h2>}
-        <Link to='/'>
-          <h1 className='link'>Space Truckers</h1>
-        </Link>
+        <h1>Space Truckers</h1>
         <h2 className='subtitle'>"Where were going, there are no laws."</h2>
-        <Link to='/booked'>
-          <h2 className='subtitle link' >View Booked Jobs</h2>
-        </Link>
+        <ui>
+          <Link to='/'>
+            <li className='subtitle'>Home</li>
+          </Link>
+          <Link to='/booked'>
+            <li className='subtitle' >View Booked Jobs</li>
+          </Link>
+        </ui>
         <Route exact path="/" render={() => {
           return (
             <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookThisJob={this.bookThisJob} />

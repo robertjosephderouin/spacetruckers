@@ -11,8 +11,8 @@ body{
   max-width: 1920px;
 }
 
-link { 
-  color: inherit; 
+.link { 
+  color: #39FF14;
 } 
 
 h1 {
