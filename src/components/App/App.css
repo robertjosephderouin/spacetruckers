@@ -11,6 +11,16 @@ body{
   max-width: 1920px;
 }
 
+.nav-bar{
+  margin-left: 20px;
+  padding: 5px;
+  max-width: 20%;
+  background-color: black;
+  box-sizing: border-box;
+  border: 3px solid #2f524e;
+  border-top-right-radius: 25px;
+}
+
 .link { 
   color: #39FF14;
 } 
@@ -22,4 +32,10 @@ h1 {
 .subtitle {
   margin-left: 40px;
   font-size: small;
+}
+
+@media screen and (max-width: 425px) {
+  .nav-bar{
+    max-width: 70%;
+  }
 }

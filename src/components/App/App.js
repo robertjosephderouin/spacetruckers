@@ -54,14 +54,14 @@ class App extends Component {
         {!this.state.jobs.length && !this.state.error && <h2>Loading jobs...</h2>}
         <h1>Space Truckers</h1>
         <h2 className='subtitle'>"Where were going, there are no laws."</h2>
-        <ui>
+        <nav className='nav-bar'>
           <Link to='/'>
-            <li className='subtitle'>Home</li>
+            <h2 className='subtitle button'>Home</h2>
           </Link>
           <Link to='/booked'>
-            <li className='subtitle' >View Booked Jobs</li>
+            <h2 className='subtitle button' >View Booked</h2>
           </Link>
-        </ui>
+        </nav>
         <Route exact path="/" render={() => {
           return (
             <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookThisJob={this.bookThisJob} />
