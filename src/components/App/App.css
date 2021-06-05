@@ -12,6 +12,7 @@ body{
 }
 
 .nav-bar{
+  align-content: center;
   margin-left: 20px;
   padding: 5px;
   max-width: 20%;
@@ -34,8 +35,20 @@ h1 {
   font-size: small;
 }
 
+@media screen and (max-width: 1440px) {
+  .nav-bar{
+    max-width: 25%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-bar{
+    max-width: 35%;
+  }
+}
+
 @media screen and (max-width: 425px) {
   .nav-bar{
-    max-width: 70%;
+    max-width: 90%;
   }
 }
