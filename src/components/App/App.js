@@ -59,6 +59,11 @@ class App extends Component {
             <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookThisJob={this.bookThisJob} />
           )
         }}/>
+        <Route exact path="/booked" render={() => {
+          return (
+            <Jobs jobs={this.state.jobs.filter(job => job.isBooked)} removeJob={this.removeJob} bookThisJob={this.bookThisJob} />
+          )
+        }} />
       </main>
     );
   }
