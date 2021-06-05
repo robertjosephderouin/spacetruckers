@@ -11,6 +11,10 @@ body{
   max-width: 1920px;
 }
 
+link { 
+  color: inherit; 
+} 
+
 h1 {
   padding-left: 1.5vw;
 }

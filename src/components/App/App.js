@@ -2,7 +2,7 @@ import './App.css';
 import Jobs from '../Jobs/Jobs';
 import React, { Component } from 'react'
 import { getJobs, deleteJob, bookJob } from '../../api-calls'
-import {Route } from "react-router-dom";
+import {Route, Link } from "react-router-dom";
 
 class App extends Component {
   constructor() {
@@ -52,8 +52,13 @@ class App extends Component {
     return (
       <main className="App">
         {!this.state.jobs.length && !this.state.error && <h2>Loading jobs...</h2>}
-        <h1>Space Truckers</h1>
+        <Link to='/'>
+          <h1 className='link'>Space Truckers</h1>
+        </Link>
         <h2 className='subtitle'>"Where were going, there are no laws."</h2>
+        <Link to='/booked'>
+          <h2 className='subtitle link' >View Booked Jobs</h2>
+        </Link>
         <Route exact path="/" render={() => {
           return (
             <Jobs jobs={this.state.jobs} removeJob={this.removeJob} bookThisJob={this.bookThisJob} />
