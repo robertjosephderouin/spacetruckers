@@ -4,7 +4,7 @@ describe('Jobs View', () => {
     cy.stubAllJobs()
   });
 
-  describe('Page Load View', () => {
+  describe('Page Load User Story', () => {
 
     it('Should display the company name on load', () => {
       cy.get('h1').contains('Space Truckers')
@@ -25,7 +25,7 @@ describe('Jobs View', () => {
     });
   });
 
-  describe('Delete Booking', () => {
+  describe('Delete Booking User Story', () => {
 
     it('Should delete a job when the delete button is clicked', () => {
       cy.removeJob()
@@ -35,7 +35,7 @@ describe('Jobs View', () => {
       });
     });
 
-  describe('Job Booking', () => {
+  describe('Job Booking User Story', () => {
 
     it('Should change the job value to booked when the booked button is clicked', () => {
       cy.stubAllJobs()
@@ -47,5 +47,5 @@ describe('Jobs View', () => {
         .get('.card').get('#1')
         .get('#booked1').contains('Job booked')
     });
-});
+  });
 });
