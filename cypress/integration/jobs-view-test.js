@@ -27,14 +27,13 @@ describe('Jobs View', () => {
 
   describe('Delete Booking', () => {
 
-      it('Should delete a job when the delete button is clicked', () => {
-        cy.removeJob()
-        // cy.getSingleJob()
-        cy.get('#delete2')
-          .click()
-          .get('.card').should('have.length', 1)
-        });
+    it('Should delete a job when the delete button is clicked', () => {
+      cy.removeJob()
+      cy.get('#delete2')
+        .click()
+        .get('.card').should('have.length', 1)
       });
+    });
 
   describe('Job Booking', () => {
 
@@ -43,10 +42,10 @@ describe('Jobs View', () => {
       cy.patchJob()
       cy.modifiedJob()
       cy.get('.interactive-container')
-      .get('#book1')
-      .click({ force: true })
-      .get('.card').get('#1')
-      .get('#booked1').contains('Job booked')
-  });
+        .get('#book1')
+        .click({ force: true })
+        .get('.card').get('#1')
+        .get('#booked1').contains('Job booked')
+    });
 });
 });
