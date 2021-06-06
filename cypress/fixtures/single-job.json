@@ -2,10 +2,19 @@
   {
     "id": 1,
     "image": "/mars.jpeg",
-    "name": "Mars",
+    "name": "Mars Modified",
     "date": "11:10:2195",
     "pay": 50000000,
     "isBooked": true,
-    "fluff": "Mars is a barren planet with little resources."
+    "fluff": "bugs"
+  },
+  {
+    "id": 2,
+    "image": "/jupiter.jpeg",
+    "name": "Jupiter Modified",
+    "date": "6:05:2198",
+    "pay": 10000000,
+    "isBooked": false,
+    "fluff": "Its a big gas giant."
   }
 ]

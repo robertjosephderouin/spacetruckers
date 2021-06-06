@@ -12,7 +12,7 @@ const Card = ({ job, removeJob, bookThisJob }) => {
         <p className='pay'>{job.pay}</p>
         <p className='fluff'>{job.fluff}</p>
         <div className='interactive-container'>
-          {job.isBooked && <p className='booked'>Job booked</p>}
+          {job.isBooked && <p className='booked' id={`booked${job.id}`}>Job booked</p>}
           {!job.isBooked && <button className='book-btn button' id={`book${job.id}`} onClick={() => bookThisJob(job.id)}>Book Job 🚀</button>}
           <button className='delete-btn button' id={`delete${job.id}`} onClick={() => removeJob(job.id)}>🗑</button>
         </div>
