@@ -22,6 +22,6 @@ Cypress.Commands.add('removeJob', () => {
   cy.intercept('DELETE', baseURL , singleJob)
 });
 
-Cypress.Commands.add('modifiedJob', () => {
-  cy.intercept(baseURL, singleJob)
-});
+// Cypress.Commands.add('modifiedJob', () => {
+//   cy.intercept(baseURL, singleJob)
+// });
