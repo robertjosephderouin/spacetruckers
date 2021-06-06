@@ -29,6 +29,7 @@ describe('Jobs View', () => {
 
       it('Should delete a job when the delete button is clicked', () => {
         cy.removeJob()
+        // cy.getSingleJob()
         cy.get('#delete2')
           .click()
           .get('.card').should('have.length', 1)
@@ -38,7 +39,9 @@ describe('Jobs View', () => {
   describe('Job Booking', () => {
 
     it('Should change the job value to booked when the booked button is clicked', () => {
+      cy.stubAllJobs()
       cy.patchJob()
+      cy.modifiedJob()
       cy.get('.interactive-container')
       .get('#book1')
       .click({ force: true })
@@ -46,5 +49,4 @@ describe('Jobs View', () => {
       .get('#booked1').contains('Job booked')
   });
 });
-
 });
