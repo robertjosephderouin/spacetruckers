@@ -52,6 +52,7 @@ class App extends Component {
     return (
       <main className="App">
         {!this.state.jobs.length && !this.state.error && <h2>Loading jobs...</h2>}
+        {this.state.error && <p>{this.state.error}</p>}
         <h1>Space Truckers</h1>
         <h2 className='subtitle'>"Where were going, there are no laws."</h2>
         <nav className='nav-bar'>
