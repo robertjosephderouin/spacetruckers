@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './Card.css';
 
 const Card = ({ job, removeJob, bookThisJob }) => {
@@ -21,3 +22,9 @@ const Card = ({ job, removeJob, bookThisJob }) => {
 }
 
 export default Card
+
+Card.propTypes = {
+  job: PropTypes.object.isRequired,
+  removeJob: PropTypes.func.isRequired,
+  bookThisJob: PropTypes.func.isRequired
+}
