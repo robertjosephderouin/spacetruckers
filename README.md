@@ -46,4 +46,4 @@ Space Truckers is a website and baack end that allows futuristic Space Truckers 
 
 * Project Repo : https://github.com/robertjosephderouin/spacetruckers & https://github.com/cmeubanks/spacetruckerapi
 
-* Deployed Page : 
+* Deployed Page : http://abrasive-honey.surge.sh/
