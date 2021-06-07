@@ -38,7 +38,6 @@ describe('Jobs View', () => {
   describe('Job Booking User Story', () => {
 
     it('Should change the job value to booked when the booked button is clicked', () => {
-      cy.stubAllJobs()
       cy.patchJob()
       cy.modifiedJob()
       cy.get('.interactive-container')

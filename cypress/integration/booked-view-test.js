@@ -7,7 +7,7 @@ describe('Booked Jobs View', () => {
 
   describe('Booked Jobs User Story', () => {
 
-    it('Should show booked jobs only when View Booked button is clicked', () => {
+    it('Should show separate display of booked jobs when View Booked button is clicked', () => {
       cy.get('h2')
         .contains('View Booked')
         .click()
