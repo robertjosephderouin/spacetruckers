@@ -15,7 +15,7 @@ A Front-End Project by [Caroline Eubanks](https://github.com/cmeubanks), [Marcel
 Space Truckers is a website and baack end that allows futuristic Space Truckers to view a list of jobs out in the system, book them, and delete. 
 
 ## Functionality
-![Functionality]()
+![Functionality](https://media.giphy.com/media/il89lstTn1rOtMS73Z/giphy.gif)
 
 * Current:
   - Users will see a dashboard listing all space trucking jobs available on the back end server. 
