@@ -1,70 +1,49 @@
-# Getting Started with Create React App
+# Stretch Tech, Back End
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A Front-End Project by [Caroline Eubanks](https://github.com/cmeubanks), [Marceline Ball](http://github.com/MarcelineBall) & [Robert DeRouin](https://github.com/robertjosephderouin)
 
-## Available Scripts
+* Project Manager: [Leta Keane](https://github.com/letakeane) &[Scott Ertmer](https://github.com/sertmer)
 
-In the project directory, you can run:
+1. [Overview](#overview)
+2. [Functionality](#functionality)
+3. [Technologies](#technologies)
+4. [Contributors](#contributors)
+5. [Resources](#resources)
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Space Truckers is a website and baack end that allows futuristic Space Truckers to view a list of jobs out in the system, book them, and delete. 
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Functionality
+![Functionality]()
 
-### `npm test`
+* Current:
+  - Users will see a dashboard listing all space trucking jobs available on the back end server. 
+  - Users can click book job on the job cards which will make a change to the back end and will be reflected on the page.
+  - Users can click delete job on the job cards which will delete the card from the back end and remove it from the page.
+  - Users can filter the page so that they can only see jobs that they have booked. 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies
 
-### `npm run build`
+1. HTML
+2. CSS
+3. JavaScript
+4. GitHub
+5. React
+6. Router
+7. Cypress
+8. Heroku
+9. Express
+10. Knex
+11. Postgres
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributors
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Creator: [Caroline Eubanks](https://github.com/cmeubanks), [Marceline Ball](http://github.com/MarcelineBall) & [Robert DeRouin](https://github.com/robertjosephderouin)
+* Project Manager: [Leta Keane](https://github.com/letakeane) &[Scott Ertmer](https://github.com/sertmer)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Resources
 
-### `npm run eject`
+* Project Repo : https://github.com/robertjosephderouin/spacetruckers & https://github.com/cmeubanks/spacetruckerapi
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+* Deployed Page : 
