@@ -3,6 +3,7 @@ body{
   color: #39FF14;
   filter: drop-shadow(5px 5px 1px #2f524e55);
   background-color: #25273c;
+  min-height: 100vh;
   background: linear-gradient(135deg, rgba(125,126,125,1) 6%,rgba(14,14,14,1) 36%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
